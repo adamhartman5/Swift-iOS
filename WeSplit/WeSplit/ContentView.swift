@@ -23,7 +23,7 @@ struct ContentView: View {
     }
     var totalPerPerson : Double {
         let peopleCount = Double(numberOfPeople) ?? 2
-        let amountPerPerson = grandTotal / (peopleCount + 2)
+        let amountPerPerson = grandTotal / peopleCount
         
         return amountPerPerson
     }
